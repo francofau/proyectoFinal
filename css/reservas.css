@@ -1,0 +1,80 @@
+/* Reservas */
+*{
+    box-sizing: border-box;
+	  font-family: 'Varela Round', sans-serif;
+}
+body {
+    min-height: 100vh; 
+    overflow-x: hidden;
+}
+
+.overlay {
+  z-index: -11;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background:rgb(255, 255, 255);
+}
+
+#iaCeles{
+    color: #33cabb;	
+}
+
+.sup{
+  text-align: left;
+  border: 0;
+  border-radius: 27.5px;
+  box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
+  overflow: hidden; 
+  justify-content: center;  
+  padding: 35px 60px 60px;   
+  border-top: 5px solid #09C6AB;  
+  border-radius: 27.5px;
+}
+
+.reserva-card-img {
+  border-radius: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 422px) {
+    .reserva-card {
+        padding: 35px 24px; } 
+    }
+
+/* estilo de los inputs */
+.reserva-card .form-control{
+  border: 1px solid #d5dae2;
+  margin-bottom: 20px;
+  min-height: 45px;
+  font-size: 13px;
+  line-height: 15;
+  font-weight: normal; 
+}
+
+.reserva-card-description {
+  font-size: 25px;
+  color: #000;
+  font-weight: normal;
+  margin-bottom: 28px; 
+}
+  
+/*botón*/
+.btn-primary {
+  background: #09C6AB !important;
+  color: #fff;
+  border: 2px solid #09C6AB !important;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background: #0ab8a0 !important;
+  border-color: #03423a !important;
+}
+.btn-primary.btn-outline {
+  background: transparent;
+  color: #09C6AB;
+  border: 2px solid #09C6AB;
+}

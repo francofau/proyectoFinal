@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+	font-family: 'Varela Round', sans-serif;
+}
+body {
+    min-height: 100vh; 
+    overflow-x: hidden;
+}
+
+.sup{
+	display: flex;
+	justify-content:center;
+}
+
+.caj{
+	padding: 35px;
+	width: 100vw;
+	width: 100%; 
+	border-top: 5px solid #09C6AB;  
+	border-radius: 27.5px;
+	box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
+	overflow: hidden;
+}
+
+.ciud{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 250px;
+}
+.barc{
+    background-image: url(../img/bcn2.jpg);
+    color: white;
+}
+.barc .h1{
+    font-size: 66px;
+}
+.barc .parr{
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .barc .h1 {
+        font-size: 40px;
+    } 
+}
+@media (max-width: 768px) {
+    .barc .parr {
+        font-size: 14px;
+    } 
+}
+
+.img1{
+  background-image: url("../img/hotel07.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}

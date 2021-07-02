@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
+    <!-- Boostrap JQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<!-- Font Awesome-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/navBar.css">
+    <link rel="stylesheet" href="../css/ofertas.css">
+	<link rel="stylesheet" href="../css/footer.css">
+    <title>Ofertas</title>
+</head>
+<body>
+<!-- NAVBAR -->
+<div id="traerNavBar"></div>
+<!-- CONTENIDO -->
+    <h2 class="p-3 text-center">Encuentra ofertas en hoteles</h2>
+    <div class="container sup">
+        <div class="row cajaBusca">
+            <div class="col-xs-12">
+                <form action="" method="POST">
+                    <div class="form-row">
+                        <div class="form-group col-md-8">
+                            <label for="ciudad" class="">Destino:</label>
+                            <input name="ciudad" type="text" class="form-control" id="ciudad" placeholder="¿Dónde quieres ir?">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="fechaIngreso" class="">Ingreso:</label>
+                            <input name="fechaIngreso" type="date" class="form-control" id="fechaIngreso" placeholder="¿Cuándo llegas?">
+                        </div>
+                        <div class="form-group col-md-2"">
+                            <label for="fechaSalida" class="">Salida:</label>
+                            <input name="fechaSalida" type="date" class="form-control" id="fechaSalida" placeholder="¿Cuándo te vas?">
+                        </div>
+                        <div class="form-group col-md-3">                                         
+                            <select name="adult" class="form-control tm-select" id="adultos">
+                                <option value="">Cantidad de Adultos</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-3">                     
+                            <select name="children" class="form-control" id="ninos">
+                                <option value="">¿Viajas con Niños?</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <select name="habitaciones" class="form-control" id="habitaciones">
+                                <option value="">Habitaciones</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary-1">¡Buscar Hotel!</button>
+                        </div>
+                      </div>
+                      <!-- <div class="form-row">
+                          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div> -->
+                </form>
+            </div>                        
+        </div> <!-- fin barra búsqueda -->
+    </div> <!-- fin contenedor principal -->
+
+<!-- "HOTELES MAS ELEGIDOS" -->
+<div class="container sup mt-5">
+  <div class="row cajaBusca">
+  <p>Hoteles mas elegidos</p>
+    <div class="col-xl-12">
+      <form action="" method="POST">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col">
+                    <div class="bg-primary py-2 text-white text-center">1</div>
+                  </div>
+                  <div class="col">
+                    <div class="bg-secondary py-2 text-white text-center">2</div>
+                  </div>
+                  <div class="col">
+                    <div class="bg-success py-2 text-white text-center">3</div>
+                  </div>
+                  <div class="col">
+                    <div class="bg-danger py-2 text-white text-center">4</div>
+                  </div>
+                  <div class="col">
+                    <div class="bg-warning py-2 text-white text-center">5</div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col">
+                    <div class="bg-primary py-2 text-white text-center">6</div>
+                  </div>
+                  <div class="col">
+                    <div class="bg-secondary py-2 text-white text-center">7</div>
+                  </div>
+                  <div class="col">
+                    <div class="bg-success py-2 text-white text-center">8</div>
+                  </div>
+                  <div class="col">
+                    <div class="bg-danger py-2 text-white text-center">9</div>
+                  </div>
+                  <div class="col">
+                    <div class="bg-warning py-2 text-white text-center">10</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+          <div class="row box-row-mid m-1 gap-1">
+              <div class="col-sm-8 box-col img1"></div>
+              <div class="col-sm box-col img2"></div>
+          </div>
+          <div class="row box-row-base m-1 gap-1">
+              <div class="col-sm box-col img3"></div>
+              <div class="col-sm box-col img4"></div>
+              <div class="col-sm box-col img5"></div>
+          </div>
+        </div>
+      </form>
+    </div>                        
+  </div> <!-- fin barra búsqueda -->
+</div> <!-- fin contenedor principal -->
+
+
+<!-- "DESCUBRE ESPAÑA" -->
+<div class="container sup mt-5">
+  <div class="row cajaBusca">
+  <p>Descubre España</p>
+      <form action="" method="POST">
+        <!-- FILA 1 CARDS -->
+        <div class="card-deck">
+          <div class="card  text-center" >
+              <img  src="../img/barcelona.jpg" class="card-img-top" alt="bcn">
+              <div class="card-body">
+                <h5 class="card-title">Barcelona</h5>
+                <p  class="card-text">Capital catalana famosa por la arquitectura fantasiosa de Gaudí, el barrio gótico y los bares de tapas. </p>
+              </div>
+              <div class="card-footer"><a href="../ciudades/barcelona.html" class="btn btn-primary btn-block"">¡Descubre!</a></div>
+          </div>
+          <div class="card  text-center" >
+              <img  src="../img/madrid.jpg" class="card-img-top" alt="mdd">
+              <div class="card-body">
+                <h5 class="card-title">Madrid</h5>
+                <p  class="card-text">Capital de España que alberga el Palacio Real y museos de arte notables como el del Prado y el Reina Sofía.</p>
+              </div>
+              <div class="card-footer"><a href="../ciudades/madrid.html" class="btn btn-primary btn-block"">¡Descubre!</a></div>
+          </div>
+          <div class="card  text-center" >
+              <img  src="../img/sevilla.jpg" class="card-img-top" alt="sva">
+              <div class="card-body">
+                <h5 class="card-title">Sevilla</h5>
+                <p  class="card-text">Ciudad española con una catedral gótica, un barrio medieval judío, el castillo del Alcázar y flamenco. </p>
+              </div>
+              <div class="card-footer"><a href="../ciudades/sevilla.html" class="btn btn-primary btn-block"">¡Descubre!</a></div>
+          </div>
+        </div>
+        <!-- FILA 2 CARDS -->
+        <div class="card-deck mt-3">
+          <div class="card  text-center" >
+              <img  src="../img/sanseb.jpg" class="card-img-top" alt="ssb">
+              <div class="card-body">
+                <h5 class="card-title">San Sebastián</h5>
+                <p  class="card-text">Ciudad turística española con playas como la Concha, tiendas elegantes y restaurantes vascos prestigiosos. </p>
+              </div>
+              <div class="card-footer"><a href="../ciudades/sanSebastian.html" class="btn btn-primary btn-block"">¡Descubre!</a></div>
+          </div>
+          <div class="card  text-center" >
+              <img  src="../img/Tenerife.jpg" class="card-img-top" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Tenerife</h5>
+                <p  class="card-text">Isla española en la costa de África Occidental, con el volcán Teide, el carnaval y muchos resorts de playa.</p>
+              </div>
+              <div class="card-footer"><a href="../ciudades/tenerife.html" class="btn btn-primary btn-block"">¡Descubre!</a></div>
+          </div>
+          <div class="card  text-center" >
+              <img  src="../img/Ibiza.jpg" class="card-img-top" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Ibiza</h5>
+                <p  class="card-text">Isla balear con discotecas de renombre en la ciudad de Ibiza y en Sant Antoni, playas y zonas de buceo.</p>
+              </div>
+              <div class="card-footer"><a href="#" class="btn btn-primary btn-block"">¡Descubre!</a></div>
+          </div>
+        </div>
+      </form>
+                           
+  </div> <!-- fin barra búsqueda -->
+</div> <!-- fin contenedor principal -->
+    
+<div id="traerFooter"></div>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+/* ofertas */
+*{
+    box-sizing: border-box;
+	font-family: 'Varela Round', sans-serif;
+}
+body {
+    min-height: 100vh; 
+    overflow-x: hidden;
+}
+
+.sup{
+	display: flex;
+	justify-content:center;
+}
+
+.cajaBusca{
+	padding: 35px;
+	width: 100vw;
+	width: 100%; 
+	border-top: 5px solid #09C6AB;  
+	border-radius: 27.5px;
+	box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
+	overflow: hidden; 
+}
+  
+/*botón con clase nombre "-1"*/
+.btn-primary-1 {
+  background: #09C6AB !important;
+  color: #fff;
+  border: 2px solid #09C6AB !important;
+  width: 20rem !important;
+  margin-left: 15px !important;
+}
+
+/* tamaño del botón al achicar  */
+@media (max-width: 1140px) {
+    .btn-primary-1 {
+        width: 10rem !important;} 
+}
+
+.btn-primary-1:hover, .btn-primary-1:focus, .btn-primary-1:active {
+  background: #0ab8a0 !important;
+  border-color: #03423a !important;
+}
+.btn-primary-1.btn-outline {
+  background: transparent;
+  color: #09C6AB;
+  border: 2px solid #09C6AB;
+}
+  
+
+.card-footer .btn-primary {
+  background: #09C6AB !important;
+  color: #fff;
+  border: 2px solid #09C6AB !important;
+}
+
+.box-row-mid{
+    background-color: orange;
+    height: 60vh;
+    text-align: center;
+}
+
+.box-row-base{
+    background-color: rgb(54, 243, 212);
+    height: 20vh;
+    text-align: center;
+}
+
+.img1{
+  background-image: url("../img/hotel07.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.img2{
+  background-image: url("../img/hotel11.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.img3{
+  background-image: url("../img/hotel01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.img4{
+  background-image: url("../img/hotel10.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.img5{
+  background-image: url("../img/hotel14.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.img09{
+  background-image: url("../img/hotel09.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.img10{
+  background-image: url("../img/hotel10.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.img11{
+  background-image: url("../img/hotel11.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.img12{
+  background-image: url("../img/hotel12.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.img13{
+  background-image: url("../img/hotel13.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.img18{
+  background-image: url("../img/hotel18.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,26 @@
+/* Preguntas Frecuentes*/
+*{
+    box-sizing: border-box;
+	font-family: 'Varela Round', sans-serif;
+}
+body {
+    min-height: 100vh; 
+    overflow-x: hidden;
+}
+
+.containter{
+    background-color: rgb(148, 148, 148);
+}
+.marc{
+    border-radius: 27.5px;
+    box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
+    border-top: 5px solid #09C6AB;  
+    overflow: hidden; 
+    padding: 35px 13px 13px 35px; 
+}
+.subT{
+    font-size: xx-large;
+}
+#iaCeles{
+    color: #33cabb;	
+}

@@ -1,0 +1,37 @@
+*{
+  font-family: 'Varela Round', sans-serif;
+  box-sizing: border-box;  
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+#h1wel{
+    font-size: 6.5rem;
+    font-weight: 1100;
+    color: #000000;
+    margin-top: 25%;
+    text-shadow: 1px 1px 2px rgb(158, 156, 156);
+}
+
+#h1wel b{
+	color: #33cabb;	
+}
+
+#pWel{
+    font-size: 2rem;
+    margin-top: 10%;
+    color: #000000;
+    margin-left: 27%;
+}
+
+#ingreso{
+     margin-left: 48%;
+}

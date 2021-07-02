@@ -1,0 +1,56 @@
+/* Visor */
+
+*{
+    box-sizing: border-box;
+	font-family: 'Varela Round', sans-serif;
+}
+body {
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh; 
+    overflow-x: hidden;
+}
+
+.bord {
+  position: relative;
+  width: 100%; 
+  border-top: 5px solid #09C6AB;  
+  border-radius: 27.5px;
+  box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
+  overflow: hidden; 
+  margin-left: 40px;
+  padding: 35px !important;
+}
+
+.map{
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 577px) {
+    .bord{
+      margin: 10px;
+    }
+}
+
+#imgMapa{
+  padding: 10px;
+}
+.bMa{
+  margin-top: 10px;
+  width: 180px;
+}
+  
+.btn-primary {
+  background: #09C6AB;
+  color: #fff;
+  border: 2px solid #09C6AB !important;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background: #0ab8a0 !important;
+  border-color: #03423a !important;
+}
+.btn-primary.btn-outline {
+  background: transparent;
+  color: #09C6AB;
+  border: 2px solid #09C6AB;
+}
