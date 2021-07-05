@@ -1,0 +1,58 @@
+/* Hotel elegido */
+*{
+    box-sizing: border-box;
+	font-family: 'Varela Round', sans-serif;
+}
+body {
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh; 
+    overflow-x: hidden;
+}
+
+.box-row-mid{
+    /* background-color: orange; */
+    height: 60vh;
+}
+
+.box-row-base{
+    /* background-color: yellow; */
+    height: 20vh;
+}
+
+.box-col{
+    background-color: rgb(69, 212, 193);
+    text-align: center;
+}
+
+#d-row {
+    display: flex;
+    flex-direction: row;
+}
+.cajaBusca{    
+	padding: 15px;
+	width: 100%; 
+	border-top: 5px solid #09C6AB;  
+	border-radius: 27.5px;
+	box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
+	overflow: hidden; 
+}
+
+.btn-primary {
+  background: #09C6AB;
+  color: #fff;
+  border: 2px solid #09C6AB !important;
+  padding: 2px;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background: #0ab8a0 !important;
+  border-color: #03423a !important;
+}
+.btn-primary.btn-outline {
+  background: transparent;
+  color: #09C6AB;
+  border: 2px solid #09C6AB;
+}
+
+.btn-anch{
+    width: 190px;
+}
