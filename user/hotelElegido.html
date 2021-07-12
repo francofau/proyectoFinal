@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
+    <!-- Boostrap JQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<!-- Font Awesome-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/hotelElegido.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Hotel Elegido</title>
+</head>
+<body>
+<!-- NAVBAR -->
+<div id="traerNavBar"></div>
+<h4 class="text-center m-3">Hotel elegido: Seleccionar detalles</h4>
+<div class="container-flex">
+        <div class="row cajaBusca d-flex justify-content-around align-items-center">
+                <div id="d-row" id="list-example" class="list-group">
+                    <a class="list-group-item list-group-item-action" href="#list-item-1">Info y precios</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-2">Servicios</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-3">Condiciones Generales</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-4">Comentarios de clientes</a>
+                </div>
+        </div> <!-- fin contenedor color -->      
+        <div class="row cajaBusca m-3">       
+            <div class="col">                 
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center m-3">NOMBRE DE HOTEL DESDE BD</h2>
+                    </div>
+                    <div class="col-5 mt-2">
+                        <button type="button" class="btn-primary btn-lg btn-anch">Reservar ahora</button>
+                    </div>                    
+                </div>
+                <!-- Imagenes -->
+                <div class="row box-row-mid m-1 gap-1">
+                    <div class="col-sm box-col">img1</div>
+                    <div class="col-sm-4 box-col">img2</div>
+                </div>
+                <div class="row box-row-base m-1 gap-1">
+                    <div class="col-sm box-col">img3</div>
+                    <div class="col-sm box-col">img4</div>
+                    <div class="col-sm box-col">img5</div>
+                </div>
+            </div>
+        
+        <div class="row d-flex justify-content-between m-3">
+            <p id="list-item-1">DESCRIPCIÓN HOTEL</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, sunt. Alias nam porro deserunt unde soluta praesentium, odio accusantium saepe assumenda, culpa cumque dolorem a officia voluptate ea ex perspiciatis.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime sunt sint consequatur ea ipsum, temporibus hic qui eveniet. Architecto nisi sed rem quisquam corporis consequatur incidunt deserunt est assumenda. Magnam.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit amet qui praesentium iste. Quis ea a iure doloremque, minima, consequatur quia, commodi tempore molestias eos suscipit laborum? Optio, doloribus ea.</p>
+        </div>
+    </div> <!-- fin contenedor color -->
+</div>
+<div class="container-flex m-3">
+    <div class="row cajaBusca">
+        <div class="col-xs-12 mt-2">
+            <h4><strong>Disponibilidad</strong></h4>
+            <form action="" method="POST">
+                <div class="form-row">                        
+                    <div class="form-group col-md-2">
+                        <label for="fechaIngreso" class="">Ingreso:</label>
+                        <input name="fechaIngreso" type="date" class="form-control" id="fechaIngreso" placeholder="¿Cuándo llegas?">
+                    </div>
+                    <div class="form-group col-md-2"">
+                        <label for="fechaSalida" class="">Salida:</label>
+                        <input name="fechaSalida" type="date" class="form-control" id="fechaSalida" placeholder="¿Cuándo te vas?">
+                    </div>
+                    <div class="form-group col-md-2">  
+                        <label for="adult" class="">Adultos:</label>                                      
+                        <select name="adult" class="form-control tm-select" id="adultos">
+                            <option value=""></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="children" class="">Niños:</label>                   
+                        <select name="children" class="form-control" id="ninos">
+                            <option value=""></option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="habitaciones" class="">Habitaciones:</label> 
+                        <select name="habitaciones" class="form-control" id="habitaciones">
+                            <option value=""></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="habitaciones" class="">     </label> 
+                        <button type="submit" class="btn btn-primary mb-2">Ver Disponibilidad</button>
+                    </div>
+                </div>
+                    
+            </form>
+        </div>                        
+        <table class="table">
+            <thead class="table">
+                <tr>
+                    <th scope="col">Capacidad</th>
+                    <th scope="col">Tipo de habitación</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Llenar</th>
+                    <td>Habitación Doble
+                    <p>1 cama doble extragrande</p>
+                    </td>
+                    <td></td>
+                    <td><button type="submit" class="btn btn-primary mb-2">Mostrar Precios</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">con datos</th>
+                    <td>Habitación Doble con vistas al mar (2 adultos)
+                    <p>1 cama doble</p>
+                    </td>
+                    <td></td>
+                    <td><button type="submit" class="btn btn-primary mb-2">Mostrar Precios</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">según lo</th>
+                    <td>Habitación Doble Superior con terraza (2 adultos)
+                    <p>1 cama doble</p>
+                    </td>
+                    <td></td>
+                    <td><button type="submit" class="btn btn-primary mb-2">Mostrar Precios</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">elegido arriba</th>
+                    <td>Suite Junior
+                    <p>1 cama doble</p>
+                    </td>
+                    <td></td>
+                    <td><button type="submit" class="btn btn-primary mb-2">Mostrar Precios</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>  <!-- fin contenedor color -->
+</div> 
+<!-- SERVICIOS -->
+<div class="container-flex m-3">
+    <div class="row cajaBusca">            
+        <div class="row m-3 d-flex flex-column" id="list-item-2">
+            <h4><strong>Servicios</strong></h4>
+            <div class="row m-2">
+                <div class="col">
+                    <p><strong>Exteriores</strong></p>
+                    <p>Mobiliario exterior</p>
+                    <p>Terraza / solárium</p>
+                    <p>Terraza</p>
+                    <p>Jardín</p>
+                    <br>
+                    <p><strong>Servicios y extras</strong></p>
+                    <p>Entradas para lugares de interés o espectáculos</p>
+                    <br>
+                    <p><strong>Mascotas</strong></p>
+                    <p>Se admiten. Se pueden aplicar suplementos.</p>
+                    <br>                        
+                    <p><strong>Actividades</strong></p>
+                    <p>Música / espectáculos en directo</p>
+                    <p>Playa</p>
+                    <p>Entretenimiento nocturno</p>
+                    <p>Personal de animación</p>
+                    <br>
+                    <p><strong>Comida y bebida</strong></p>
+                    <p>Bar</p>
+                    <p>Restaurante</p>
+                    <br>
+                    <p><strong>Internet</strong></p>
+                    <p>¡Gratis! Hay conexión a internet Wi-Fi disponible en todo el establecimiento. Gratis.</p>
+                    <p><strong>Aparcamiento</strong></p>
+                    <p>No hay parking.</p>
+                </div>
+                <div class="col-1"></div>
+                <div class="col">                    
+                    <p><strong>Servicios de recepción</strong></p>
+                    <p>Guardaequipaje</p>
+                    <p>Información turística</p>
+                    <p>Recepción 24 horas</p>
+                    <br>
+                    <p><strong>Servicios de limpieza</strong></p>
+                    <p>Servicio de planchado</p>
+                    <p>Servicio de limpieza en seco</p>
+                    <p>Servicio de lavandería</p>
+                    <br>
+                    <p><strong>Seguridad</strong></p>
+                    <p>Extintores</p>
+                    <p>Detectores de humo</p>
+                    <p>Seguridad 24 horas</p>
+                    <p>Caja fuerte</p>
+                    <br>
+                    <p><strong>General</strong></p>
+                    <p>Cesta para mascotas</p>
+                    <p>Solo para adultos</p>
+                    <p>Zona de fumadores</p>
+                    <p>Aire acondicionado</p>
+                    <p>Calefacción</p>
+                    <p>Alquiler de coches</p>
+                    <p>Habitaciones insonorizadas</p> 
+                    <p>Ascensor</p> 
+                    <p>Suite nupcial</p>
+                    <p>Habitaciones para no fumadores</p>
+                </div>
+                <div class="col">
+                    <p><strong>Piscina al aire libre</strong></p>
+                    <p>Abierta todo el año</p>
+                    <p>Toallas de playa/piscina</p>
+                    <p>Tumbonas/sillas de playa</p>
+                    <p>Bar en la piscina</p>
+                    <p>Piscina con vistas</p>
+                    <p>Zona poco profunda</p>
+                    <br>
+                    <p><strong>Bienestar</strong></p>
+                    <p>Gimnasio</p>
+                    <p>Sombrillas</p>
+                    <p>Tumbonas/sillas de playa</p>
+                    <p>Toallas de playa/piscina</p>
+                    <p>Baño al aire libre</p>           
+                    <br>
+                    <p><strong>Idiomas que se hablan</strong></p>
+                    <p>Alemán</p>
+                    <p>Inglés</p>
+                    <p>Catalán</p>
+                    <p>Español</p>
+                    <p>Francés</p>
+                </div>
+            </div>
+        </div>
+    </div>  <!-- fin contenedor color -->
+</div> 
+<!-- CONDICIONES GENERALES -->
+<div class="container-flex m-3">
+    <div class="row cajaBusca">        
+        <div class="row m-3 d-flex flex-column" id="list-item-3">
+            <h4><strong>Condiciones Generales</strong></h4>
+            <div class="col">
+                <p><strong>Entrada.</strong> A partir de las 14:00</p>            
+                <p>Los clientes deberán mostrar un documento de identidad con fotografía y una tarjeta de crédito en el momento de hacer el check-in.</p>
+            </div>
+            <hr>
+            <div class="col">
+                <p><strong>Salida.</strong> Hasta las 12:00</p>
+            </div>
+            <hr>
+            <div class="col">
+                <p><strong>Cancelación/prepago</strong></p>
+                <p> Las condiciones de cancelación y de pago por adelantado pueden variar según el tipo de alojamiento. Introduce las fechas de tu estancia y consulta las condiciones de la habitación seleccionada.</p>
+            </div>
+            <hr>
+            <div class="col">
+                <p><strong>Depósito por daños reembolsable</strong></p>
+                <p>Se pedirá un depósito por daños de EUR 200 a la llegada. Se efectuará con tarjeta de crédito. Se te devolverá al hacer el check-out. El depósito se devolverá por completo mediante tarjeta de crédito una vez revisado el alojamiento.</p>
+            </div>
+            <hr>
+            <div class="col">
+                <p><strong>Camas para niños</strong></p>
+                <p><strong>Condiciones para estancias con niños</strong></p>
+                <p>Se pueden alojar niños a partir de 16 años.</p>                
+                <p>Para ver la información correcta sobre precios y ocupación, añade a la búsqueda el número de niños con los que viajas y sus edades.</p>                
+                <p><strong>Condiciones sobre cunas y camas supletorias</strong></p>
+                <p>No se pueden añadir cunas en este alojamiento.</p>                
+                <p>No se pueden añadir camas supletorias en este alojamiento.</p>
+            </div>
+            <hr>
+            <div class="col">
+                <p><strong>Restricción por edad</strong></p>
+                <p>Edad mínima para el check-in: 18</p>
+            </div>
+            <hr>
+            <div class="col">
+                <p><strong>Mascotas</strong></p>
+            </div>
+            <hr>
+            <div class="col">
+                <p><strong>Tarjetas aceptadas en este hotel</strong></p>
+                <p>Visa</p>
+                <p>Mastercard</p>
+            </div>
+        </div>
+    </div> <!-- fin contenedor color -->
+</div> 
+<!-- COMENTARIO DE CLIENTES -->
+<div class="container-flex m-3">
+    <div class="row cajaBusca d-flex justify-content-center">
+        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+            <h4 id="list-item-4">Comentarios de huéspedes</h4>
+            <p>LOREM LOREM LOREM</p>
+            <p><strong>Categorías:</strong></p>
+            <div class="row">
+                <div class="col d-flex flex-column">
+                    <p>LOREM</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p>LOREM</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p>LOREM</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>  
+                <div class="col d-flex flex-column">
+                    <p>LOREM</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p>LOREM</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>           
+                <div class="col d-flex flex-column">
+                    <p>LOREM</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p>LOREM</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>  
+            </div>
+            <p class="mt-3"><strong>Lo que más gustó a otros clientes:</strong></p>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- fin contenedor color -->
+</div>
+<!-- FOOTER -->
+<div id="traerFooter"></div>
+<script src="../js/main.js"></script>
+</body>
+</html>
