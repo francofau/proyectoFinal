@@ -2,8 +2,8 @@ $(document).ready(function () {
 /*     funcion de JqueryValidate que verifica y valida los campos según las siguientes opciones */
      $("#formContacto").validate({
     rules: {
-            nombre: {required: true,minlength: 3},
-            apellido: {required: true,minlength: 3},
+            nombre: {required: true,minlength: 1},
+            apellido: {required: true,minlength: 1},
             email: {required: true,email: true},
             telefono: {required: true,number: true,min: 7},
             mensaje: { required:true,min: 4},
