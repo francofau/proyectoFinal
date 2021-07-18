@@ -277,6 +277,13 @@ h1, h2, h3, h4, h5, h6 {
   vertical-align: middle;
 }
 
+/* Cuando la búsqueda se posiciona bajo el mapa se genera un mt */
+@media screen and (max-width: 768px) {
+  .separar {
+    margin-top: 2rem !important;
+  }
+}
+
 /* Flecha llevar arriba */
 .gototop {
   position: fixed;
