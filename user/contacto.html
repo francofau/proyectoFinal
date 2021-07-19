@@ -14,6 +14,8 @@
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
     <!-- SweetAlert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- ValidateJQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
     <link rel="stylesheet" href="http://localhost/proyecto/css/navBar.css">
     <link rel="stylesheet" href="http://localhost/proyecto/css/contacto.css">
 	<link rel="stylesheet" href="http://localhost/proyecto/css/footer.css">    
@@ -31,9 +33,9 @@
         <div class="row no-gutters">          
           <div class="col-md-6">
             <div class="card-body">
-                <p class="login-card-description text-center">Ponte en contacto con Hotel<span id="iaCeles">ia</span></p>
+                <p class="login-card-description text-center">Ponte en contacto con Va<span id="iaCeles">DeHoteles</span></p>
                 <p class="text-center text-muted mb-3">Si tienes dudas o sugerencias no dudes en comunicarte con nosotros por este medio</p>
-                <form action="" method="post" name="" autocomplete="off">
+                <form action="" method="post" id="formContacto" autocomplete="off">
                     <div class="form-group">
                         <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese su nombre *" required/>
                     </div>
@@ -47,16 +49,15 @@
                         <input type="text" name="telefono" id="telefono" class="form-control" placeholder="Teléfono *" required/>
                     </div>
                     <div class="form-group">
-                        <textarea id="mensaje" name="mensaje" placeholder="Dejenos su mensaje o el motivo de la consulta" required></textarea>
+                        <textarea id="mensaje" name="mensaje" placeholder="Dejenos su mensaje o el motivo de la consulta *" required></textarea>
                     </div>
-                    <div class="adjunto">
+                    <!-- <div class="adjunto">
                         <div class="form-group">
                             <input type="file" name="adjunt" id="adjunt"  placeholder="input">
                         </div>
-                    </div>
+                    </div> -->
                     <p class="text-muted">Los campos marcados con * son obligatorios</p>
                     <input name="login" id="login" class="btn btn-primary btn-block mb-4" type="button" value="Enviar consulta">
-                    <p class="text-center text-muted" id="enContacto">¡Nos pondremos en contacto lo antes posible!</p>
                 </form>
             </div>
           </div>
