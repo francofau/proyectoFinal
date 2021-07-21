@@ -128,3 +128,7 @@ body {
   color: #09C6AB;
   border: 2px solid #09C6AB;
 }
+span.error{ 
+    color: rgb(230, 36, 36); 
+    font-size: 0.8em; 
+}
