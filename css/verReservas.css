@@ -1,5 +1,4 @@
 /* Ver Reservas */
-
 *{
     box-sizing: border-box;
 	font-family: 'Varela Round', sans-serif;
@@ -9,67 +8,135 @@ body {
     overflow-x: hidden;
 }
 
-.sup{
-	display: flex;
-	justify-content:center;
+.containter{
+    background-color: rgb(148, 148, 148);
+}
+.overlay {
+  z-index: -11;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background:rgb(255, 255, 255);
 }
 
-.cajaBusca{
-	padding: 35px;
-	width: 100vw;
-	width: 100%; 
-	border-top: 5px solid #09C6AB;  
-	border-radius: 27.5px;
-	box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
-	overflow: hidden; 
+#iaCeles{
+    color: #33cabb;	
 }
-  
-/*botón con clase nombre "-1"*/
-.btn-primary-1 {
-  background: #09C6AB !important;
+
+.bord{
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.login-card {
+  border: 0;
+  border-radius: 27.5px;
+  box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
+  overflow: hidden; 
+}
+
+/* imagen */
+.login-card-img {
+    border-radius: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;    
+}
+
+.login-card .card-body {
+    padding: 85px 50px 50px; 
+}
+
+@media (max-width: 422px) {
+    .login-card .card-body {
+        padding: 35px 24px; } 
+    }
+.login-card-description {
+    font-size: 25px;
+    color: #000;
+    font-weight: normal;
+    margin-bottom: 28px; 
+}
+.login-card form {
+    max-width: 426px; 
+}
+.login-card .form-control {
+    border: 1px solid #d5dae2;
+    padding: 15px 25px;
+    margin-bottom: 20px;
+    min-height: 45px;
+    font-size: 13px;
+    line-height: 15;
+    font-weight: normal; 
+}
+
+.login-card .form-control::-webkit-input-placeholder {
+    color: #919aa3; 
+}
+.login-card .form-control::-moz-placeholder {
+      color: #919aa3; 
+ }
+.login-card .form-control:-ms-input-placeholder {
+      color: #919aa3; 
+}
+.login-card .form-control::-ms-input-placeholder {
+      color: #919aa3; 
+}
+.login-card .form-control::placeholder {
+      color: #919aa3; 
+}
+.login-card .login-btn {
+    padding: 13px 20px 12px;
+    background-color: #000;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #fff;
+    margin-bottom: 24px; 
+}
+.login-card .login-btn:hover {
+      border: 1px solid #000;
+      background-color: transparent;
+      color: #000; 
+}
+
+.login-card-footer-text {
+    font-size: 16px;
+    color: #0d2366;
+    margin-bottom: 60px; 
+}
+@media (max-width: 767px) {
+    .login-card-footer-text {
+        margin-bottom: 24px; }
+}
+.login-card-footer-nav a {
+    font-size: 14px;
+    color: #919aa3; 
+}
+
+.btn-primary {
+  background: #09C6AB;
   color: #fff;
   border: 2px solid #09C6AB !important;
-  width: 20rem !important;
-  margin-left: 15px !important;
 }
-
-/* tamaño del botón al achicar  */
-@media (max-width: 1140px) {
-    .btn-primary-1 {
-        width: 10rem !important;} 
-}
-
-.btn-primary-1:hover, .btn-primary-1:focus, .btn-primary-1:active {
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #0ab8a0 !important;
   border-color: #03423a !important;
 }
-.btn-primary-1.btn-outline {
+.btn-primary.btn-outline {
   background: transparent;
   color: #09C6AB;
   border: 2px solid #09C6AB;
 }
-  
-
-.card-footer .btn-primary {
-  background: #09C6AB !important;
-  color: #fff;
-  border: 2px solid #09C6AB !important;
+.lblInp{
+      font-size: 14px;
 }
-
-.box-row-mid{
-    background-color: orange;
-    height: 60vh;
-    text-align: center;
-}
-
-.box-row-base{
-    background-color: rgb(54, 243, 212);
-    height: 20vh;
-    text-align: center;
-}
-
-.img1{
-  background-image: url("../img/hotel07.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+/* para el error a la hora de validar los inputs: */
+span.error{ 
+    color: rgb(230, 36, 36); 
+    font-size: 0.8em; 
 }
