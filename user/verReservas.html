@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<!-- Font Awesome-->
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- ValidateJQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
     <link rel="stylesheet" href="../css/navBar.css">
     <link rel="stylesheet" href="../css/verReservas.css">
 	<link rel="stylesheet" href="../css/footer.css">    
@@ -21,21 +25,58 @@
 <!-- NAVBAR -->
 <div id="traerNavBar"></div>
 
-<!-- RESERAS REALIZADAS POR UN CLIENTE REGISTRADO Y LOGUEADO -->
-
-
 <!-- CONTENIDO -->
- <div class="container sup mt-5">
-  <div class="row cajaBusca">
-      <form action="" method="POST">
-        <h4>No hay reservas</h4>
-      </form>                           
-  </div>
-</div> 
+  <div class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+    <div class="container">
+    <div class="overlay"></div>
+      <div class="card login-card  mt-5">
+        <div class="row no-gutters">          
+          <div class="col-md-6">
+            <div class="card-body">
+                <p class="login-card-description text-center">Estas son tus reservas en Va<span id="iaCeles">DeHoteles</span></p>
+                <form action="" method="REVISARESTEMETODO" id="formVerReservas" autocomplete="off">
+                    <div class="form-group">
+                        <label class="lblInp" for="nombreHotel">Nombre del hotel:</label>
+                        <input type="text" name="nombreHotel" id="nombreHotel" class="form-control" placeholder="traer desde tabla altaHotels" disabled/>
+                    </div>
+                    <div class="form-group">
+                        <label class="lblInp" for="direccionHotel">Dirección del hotel:</label>
+                        <input type="text" name="direccionHotel" id="direccionHotel" class="form-control" placeholder="traer desde tabla altaHotels" disabled/>
+                    </div>
+                    <div class="form-group">
+                        <label class="lblInp" for="ciudadHotel">Ciudad:</label>
+                        <input type="text" name="ciudadHotel" id="ciudadHotel" class="form-control" placeholder="traer desde tabla altaHotels" disabled/>
+                    </div>
+                    <div class="form-group">
+                        <label class="lblInp" for="telefonoHotel">Teléfono del hotel:</label>
+                        <input type="text" name="telefonoHotel" id="telefonoHotel" class="form-control" placeholder="traer desde tabla altaHotels" disabled/>
+                    </div>
+                    <div class="form-group">
+                        <label class="lblInp" for="fechaEntrada">Fecha de entrada:</label>
+                        <input type="text" name="fechaEntrada" id="fechaEntrada" class="form-control" placeholder="traer desde tabla reservas" disabled/>
+                    </div>
+                    <div class="form-group">
+                        <label class="lblInp" for="fechaSalida">Fecha de salida:</label>
+                        <input type="text" name="fechaSalida" id="fechaSalida" class="form-control" placeholder="traer desde tabla reservas" disabled/>
+                    </div>
+                    <!-- <div class="col-md-12">
+                        <input name="editarReserva" id="editarReserva" class="btn btn-secondary btn-block mb-2" type="button" value="Editar Reserva">
+                        <input name="Guardar" id="Guardar" class="btn btn-primary btn-block mb-4" type="button" value="Guardar">
+                    </div> -->
+                </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="../img/hotel16.jpg" alt="imgLogin" class="login-card-img">
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
 
 <!-- FOOTER -->
 <div id="traerFooter"></div>
-
+<script src="../js/apiVerReservas.js"></script>
 <script src="../js/main.js"></script>
 
 </body>
