@@ -32,6 +32,36 @@ body {
     background-image: url(../img/bcn2.jpg);
     color: white;
 }
+.camb{
+    background-image: url(../img/cambr.jfif);
+    color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.reu{
+    background-image: url(../img/reusG.jpg);
+    color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gerG{
+    background-image: url(../img/gerG.jpg);
+    color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sitG{
+    background-image: url(../img/sitG.jpg);
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.tarrG{
+    background-image: url(../img/tarrG.jpg);
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .barc .h1{
     font-size: 66px;
 }

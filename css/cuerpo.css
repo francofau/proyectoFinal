@@ -1,6 +1,7 @@
 *{
 	box-sizing: border-box;
 	font-family: 'Varela Round', sans-serif;
+  
 }
 
 body {
@@ -9,6 +10,7 @@ body {
   line-height: 1.7;
   color: #777;
   background: #fff;
+  
 }
 
 #page {
@@ -394,6 +396,16 @@ h1, h2, h3, h4, h5, h6 {
 .btn-success.btn-outline:hover, .btn-success.btn-outline:focus, .btn-success.btn-outline:active {
   background: #5cb85c;
   color: #fff;
+}
+
+a .btn-buscar{
+  color: #ffffff;
+  background: #5bc0de;
+}
+.btn-buscar{
+    color: #fff !important;
+    border: 2px solid #5bc0de;
+     background: #0ABCA4 !important;
 }
 
 .btn-info {
