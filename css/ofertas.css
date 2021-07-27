@@ -68,57 +68,27 @@ body {
 }
 
 .img1{
-  background-image: url("../img/hotel07.jpg");
+  background-image: url("../img/hoteles/reBrea.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .img2{
-  background-image: url("../img/hotel11.jpg");
+  background-image: url("../img/hoteles/reusNH.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .img3{
-  background-image: url("../img/hotel01.jpg");
+  background-image: url("../img/hoteles/reusGaud.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .img4{
-  background-image: url("../img/hotel10.jpg");
+  background-image: url("../img/hoteles/reusCent.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .img5{
-  background-image: url("../img/hotel14.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.img09{
-  background-image: url("../img/hotel09.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.img10{
-  background-image: url("../img/hotel10.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.img11{
-  background-image: url("../img/hotel11.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.img12{
-  background-image: url("../img/hotel12.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.img13{
-  background-image: url("../img/hotel13.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.img18{
-  background-image: url("../img/hotel18.jpg");
+  background-image: url("../img/hoteles/reusRpark.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
