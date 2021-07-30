@@ -153,3 +153,8 @@ textarea {
     padding-top: 21px;
     padding-bottom: 15px;
 }
+
+span.error{ 
+    color: rgb(230, 36, 36); 
+    font-size: 0.8em; 
+  }

@@ -20,8 +20,12 @@ body {
 }
 
 .box-col{
-    background-color: rgb(69, 212, 193);
+    /* background-color: rgb(69, 212, 193); */
     text-align: center;
+   /*  justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: contain; */
 }
 
 #d-row {
@@ -55,4 +59,13 @@ body {
 
 .btn-anch{
     width: 190px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.servCond {
+    text-decoration: none !important;
+}
+.contImagenes{
+    
 }

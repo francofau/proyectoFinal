@@ -68,7 +68,7 @@ body {
 }
 
 .img1{
-  background-image: url("../img/hoteles/reBrea.jpg");
+  background-image: url("../img/hoteles/barcelonaBB.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -83,12 +83,12 @@ body {
   background-repeat: no-repeat;
 }
 .img4{
-  background-image: url("../img/hoteles/reusCent.jpg");
+  background-image: url("../img/hoteles/tarraForum.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .img5{
-  background-image: url("../img/hoteles/reusRpark.jpg");
+  background-image: url("../img/hoteles/cambrilsBC.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
