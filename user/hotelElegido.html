@@ -7,6 +7,8 @@
      <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon -->
+    <link rel="icon" href="../img/logo/favicon.png" type="image/icon type">
     <!-- Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
     <!-- Boostrap JQuery-->
@@ -23,44 +25,30 @@
 <body>
 <!-- NAVBAR -->
 <div id="traerNavBar"></div>
-<h4 class="text-center m-3">Hotel elegido: Seleccionar detalles</h4>
-<div class="container-flex">
-        <div class="row cajaBusca d-flex justify-content-around align-items-center">
-                <div id="d-row" id="list-example" class="list-group">
-                    <a class="list-group-item list-group-item-action" href="#list-item-1">Info y precios</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-2">Servicios</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-3">Condiciones Generales</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-4">Comentarios de clientes</a>
-                </div>
-        </div> <!-- fin contenedor color -->      
         <div class="row cajaBusca m-3">       
             <div class="col">                 
                 <div class="row">
                     <div class="col">
-                        <h2 class="text-center m-3">NOMBRE DE HOTEL DESDE BD</h2>
+                        <h2 class="text-center m-3">Hotel Centre Reus</h2>
                     </div>
                     <div class="col-5 mt-2">
-                        <button type="button" class="btn-primary btn-lg btn-anch">Reservar ahora</button>
+                        <a href="../user/generarReserva.html" class="btn-primary btn-lg btn-anch">Reservar ahora</a>
                     </div>                    
                 </div>
                 <!-- Imagenes -->
-                <div class="row box-row-mid m-1 gap-1">
-                    <div class="col-sm box-col">img1</div>
-                    <div class="col-sm-4 box-col">img2</div>
-                </div>
-                <div class="row box-row-base m-1 gap-1">
-                    <div class="col-sm box-col">img3</div>
-                    <div class="col-sm box-col">img4</div>
-                    <div class="col-sm box-col">img5</div>
+                <div class="text-center">
+                    <img class="img-thumbnail" src="../img/hoteles/img6.jpg" height="300" width="600">
+                    <img class="img-thumbnail" src="../img/hoteles/img5.jpg" height="300" width="600">
+                    <img class="img-thumbnail" src="../img/hoteles/img3.jpg" height="300" width="300">
+                    <img class="img-thumbnail" src="../img/hoteles/img2.jpg" height="300" width="300">
+                    <img class="img-thumbnail" src="../img/hoteles/img1.jpg" height="300" width="300">
+                    <img class="img-thumbnail" src="../img/hoteles/img6.jpg" height="300" width="300">
                 </div>
             </div>
         
         <div class="row d-flex justify-content-between m-3">
-            <p id="list-item-1">DESCRIPCIÓN HOTEL</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, sunt. Alias nam porro deserunt unde soluta praesentium, odio accusantium saepe assumenda, culpa cumque dolorem a officia voluptate ea ex perspiciatis.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime sunt sint consequatur ea ipsum, temporibus hic qui eveniet. Architecto nisi sed rem quisquam corporis consequatur incidunt deserunt est assumenda. Magnam.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit amet qui praesentium iste. Quis ea a iure doloremque, minima, consequatur quia, commodi tempore molestias eos suscipit laborum? Optio, doloribus ea.</p>
+            <p id="list-item-1" class="mt-4">Descripción del Hotel</p>
+            <p>El Hotel Centre Reus esta situado al nuclio antiguo de Reus. Este hotel pequeño, de 3 estrelles, ofrece habitaciones amplias con aire condicionado y unas vistas privilegiadas a la iglesia de la Prioral de Sant Pere.</p>
         </div>
     </div> <!-- fin contenedor color -->
 </div>
@@ -104,11 +92,6 @@
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
                         </select>
                     </div>
                     <div class="form-group col-md-2">
@@ -123,7 +106,7 @@
                         </select>
                     </div>
                     <div class="form-group col-md-2">
-                        <label for="habitaciones" class="">     </label> 
+                        <label for="habitaciones" class=""></label> 
                         <button type="submit" class="btn btn-primary mb-2">Ver Disponibilidad</button>
                     </div>
                 </div>
@@ -141,36 +124,112 @@
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row">Llenar</th>
+                    <th scope="row">2</th>
                     <td>Habitación Doble
                     <p>1 cama doble extragrande</p>
                     </td>
                     <td></td>
-                    <td><button type="submit" class="btn btn-primary mb-2">Mostrar Precios</button></td>
+                    <td><button type="submit" class="btn btn-primary mb-2 " data-toggle="modal" data-target="#exampleModal">Mostrar Precios</button></td>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Precio 1</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                    <div class="form-group">
+                                        <label class="col-form-label">Habitación Doble - 1 cama doble extragrande<br> €50</label>
+                                    </div>
+                                    </form>
+                                </div>                        
+                            </div>
+                        </div>
+                        </div>
                 </tr>
                 <tr>
-                    <th scope="row">con datos</th>
+                    <th scope="row">2</th>
                     <td>Habitación Doble con vistas al mar (2 adultos)
                     <p>1 cama doble</p>
                     </td>
                     <td></td>
-                    <td><button type="submit" class="btn btn-primary mb-2">Mostrar Precios</button></td>
+                    <td><button type="submit" class="btn btn-primary mb-2 " data-toggle="modal" data-target="#exampleModal2">Mostrar Precios</button></td>
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel2">Precio 2</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                    <div class="form-group">
+                                        <label class="col-form-label">Habitación Doble con vistas al mar<br> €60</label>
+                                    </div>
+                                    </form>
+                                </div>                        
+                            </div>
+                        </div>
+                        </div>
                 </tr>
                 <tr>
-                    <th scope="row">según lo</th>
-                    <td>Habitación Doble Superior con terraza (2 adultos)
+                    <th scope="row">2</th>
+                    <td>Habitación Doble Superior con terraza
                     <p>1 cama doble</p>
                     </td>
                     <td></td>
-                    <td><button type="submit" class="btn btn-primary mb-2">Mostrar Precios</button></td>
+                    <td><button type="submit" class="btn btn-primary mb-2 " data-toggle="modal" data-target="#exampleModal3">Mostrar Precios</button></td>
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel3">Precio 3</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                    <div class="form-group">
+                                        <label class="col-form-label">Habitación Doble Superior con terraza - 1 cama doble <br> €80</label>
+                                    </div>
+                                    </form>
+                                </div>                        
+                            </div>
+                        </div>
+                        </div>
                 </tr>
                 <tr>
-                    <th scope="row">elegido arriba</th>
+                    <th scope="row">4</th>
                     <td>Suite Junior
-                    <p>1 cama doble</p>
+                    <p>2 camas dobles</p>
                     </td>
                     <td></td>
-                    <td><button type="submit" class="btn btn-primary mb-2">Mostrar Precios</button></td>
+                    <td><button type="submit" class="btn btn-primary mb-2 " data-toggle="modal" data-target="#exampleModal4">Mostrar Precios</button></td>
+                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel4">Precio 4</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                    <div class="form-group">
+                                        <label class="col-form-label">Suite Junior - 2 cama doble <br> €100</label>
+                                    </div>
+                                    </form>
+                                </div>                        
+                            </div>
+                        </div>
+                        </div>
                 </tr>
             </tbody>
         </table>
@@ -178,10 +237,13 @@
     </div>  <!-- fin contenedor color -->
 </div> 
 <!-- SERVICIOS -->
+<div class="accordion" id="accordionExample">
+    <button class="btn btn-block servCond" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><h4><strong>Ver Servicios</strong></h4> </button>
+<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
 <div class="container-flex m-3">
     <div class="row cajaBusca">            
         <div class="row m-3 d-flex flex-column" id="list-item-2">
-            <h4><strong>Servicios</strong></h4>
+            
             <div class="row m-2">
                 <div class="col">
                     <p><strong>Exteriores</strong></p>
@@ -268,11 +330,15 @@
         </div>
     </div>  <!-- fin contenedor color -->
 </div> 
+</div>
+</div><!-- fin accordion SERVICIOS -->
 <!-- CONDICIONES GENERALES -->
+<div class="accordion" id="accordionExample2">
+    <button class="btn btn-block servCond" type="button" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2"><h4><strong>Consultar las Condiciones Generales</strong></h4></button>
+<div id="collapseOne2" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample2">
 <div class="container-flex m-3">
     <div class="row cajaBusca">        
         <div class="row m-3 d-flex flex-column" id="list-item-3">
-            <h4><strong>Condiciones Generales</strong></h4>
             <div class="col">
                 <p><strong>Entrada.</strong> A partir de las 14:00</p>            
                 <p>Los clientes deberán mostrar un documento de identidad con fotografía y una tarjeta de crédito en el momento de hacer el check-in.</p>
@@ -319,8 +385,10 @@
         </div>
     </div> <!-- fin contenedor color -->
 </div> 
+</div>
+</div><!-- fin accordion -->
 <!-- COMENTARIO DE CLIENTES -->
-<div class="container-flex m-3">
+<!-- <div class="container-flex m-3">
     <div class="row cajaBusca d-flex justify-content-center">
         <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
             <h4 id="list-item-4">Comentarios de huéspedes</h4>
@@ -411,8 +479,8 @@
                 </div>
             </div>
         </div>
-    </div><!-- fin contenedor color -->
-</div>
+    </div>
+</div> -->
 <!-- FOOTER -->
 <div id="traerFooter"></div>
 <script src="../js/main.js"></script>

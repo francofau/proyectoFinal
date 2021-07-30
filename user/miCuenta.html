@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon -->
+    <link rel="icon" href="../img/logo/favicon.png" type="image/icon type">
+    <!-- Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
+    <!-- Boostrap JQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<!-- Font Awesome-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- ValidateJQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <!-- SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="../css/navBar.css">
+    <link rel="stylesheet" href="../css/micuenta.css">
+	<link rel="stylesheet" href="../css/footer.css">    
+    <title>VaDeHoteles - Mi Cuenta</title>
+</head>
+<body>
+<!-- NAVBAR -->
+<div id="traerNavBar"></div>
+
+<!-- CONTENIDO -->
+<div class="container sup mt-5">
+    <div class="marc">
+        <p class="subT text-center">Tu cuenta en Va<span id="iaCeles">DeHoteles</span></p>
+             <form action="" method="post" name="" autocomplete="off">
+                 <div class="bord">
+                    <p class="text-center">Tus datos registrados</p>
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <label class="lblCuen">Nombre y Apellidos:</label>
+                            <input name="nombre" type="text" class="form-control" id="nombre" disabled>
+                        </div>
+                    </div>
+                    <!-- <div class="row">
+                        <div class="form-group col-md-12">
+                            <label for="apellido" class="lblCuen">Apellido:</label>
+                            <input name="apellido" type="text" class="form-control" id="apellido" placeholder="APELLIDO ALMACENADO EN BD (NO EDITABLE)" disabled>
+                        </div>
+                    </div> -->
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <label class="lblCuen">Correo Electrónico:</label>
+                            <input type="text" name="email" id="email" class="form-control" disabled>
+                        </div>
+                        <!-- <div class="form-group col-md-4">
+                            <label for="direccion" class="lblCuen">Dirección:</label>
+                            <input type="text" name="direccion" id="direccion" class="form-control" placeholder="DIRECCIÓN ALMACENADA EN BD (EDITABLE)">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="telefono" class="lblCuen">Teléfono:</label>
+                            <input type="text" name="telefono" id="telefono" class="form-control" placeholder="TELÉFONO (EDITABLE)">
+                        </div> -->
+                        
+                    </div>
+                </div>
+               <!-- CONTRASEÑA -->
+                <div class="row">    
+                    <div class="col-md-7">    
+                        <div class="bord mt-3">
+                            <p class="text-center">Contraseña</p>    
+                            <form id="formContra">      
+                            <div class="form-group">
+                                <label for="password" class="lblCuen">Elija nueva contraseña:</label>             
+                                <input type="text" name="password" id="password" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="repPassword" class="lblCuen">Repita nueva contraseña:</label>                  
+                                <input type="text" name="repPassword" id="repPassword" class="form-control">
+                            </div>
+                            <div class="form-group">                 
+                                <input name="nuevaC" id="nuevaC" class="btn btn-outline-secondary btn-block mt-3" type="button" value="Cambiar contraseña">
+                            </div>
+                            </form> 
+                        </div>
+                    </div>
+                    <!-- IMAGEN DE PERFIL -->
+                    <div class="col-md-5">
+                        <div class="bord mt-3">
+                            <p class="text-center">Imagen de perfil</p> 
+                            <form id="formImg" action="" method="post">
+                                <div class="image-upload text-center">
+                                    <label for="file-input">
+                                        <img src="../img/profile.png" alt ="Click aquí para subir tu foto" title ="Cambiar imagen" > 
+                                    </label>
+                                    <input id="file-input" type="file" name="uploadedfile"/>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- <input name="nuevaContraseña" id="nuevaContraseña" class="btn btn-primary btn-block mt-3" type="button" value="Guardar Cambios"> -->
+                </form>
+        </div>       
+</div> <!-- fin contenedor principal -->
+
+<!-- FOOTER -->
+<div id="traerFooter"></div>
+
+<script src="../js/apiMiCuenta.js"></script>
+<script src="../js/apiMiCuentaNC.js"></script>
+<script src="../js/main.js"></script>
+
+</body>
+</html>

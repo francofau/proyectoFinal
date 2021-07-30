@@ -421,99 +421,131 @@
         <!-- INCORPORAMOS MAPA CON BOTÓN -->
         <div class="row map mt-3 bord">
            <div style="width: 100%"><iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=hotel%20gaudi+(Mi%20nombre%20de%20egocios)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
-            <input id="verMapa" type="submit" class="btn btn-primary btn-block mt-3" value="Ver en el mapa">
+            <input id="verMapa" type="submit" class="btn btn-primary btn-block mt-3" value="Seleccionar en mapa">
         </div> 
       </div>
       <div class="col-sm-7 col-lg-8 bord">
-            <div class="card  mb-3" style="max-width: 750px;">
+
+        <div class="card mb-3" style="max-width: 750px;">
+          <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/hoteles/reusRpark.jpg" class="imgRes" alt="nhR">
+          </div>
+          <div class="col-md-8">
+              <div class="card-body">
+                <div class="form-group">
+                  <label class="lblInp" for="nH">Nombre hotel:</label>
+                  <input type="text" name="nH" id="nH" class="form-control" placeholder="Hotel Reus Park" disabled/>
+              </div>
+              <div class="form-group">
+                  <label class="lblInp" for="dH">Dirección:</label>
+                  <input type="text" name="dH" id="dH" class="form-control" placeholder="traer desde talta_hotels" disabled/>
+              </div>
+              <a href="../user/hotelElegido.html" class="btn btn-primary btn-block">Ver hotel</a>
+              </div>
+          </div>
+          </div>
+      </div>
+            
+
+              <div class="card mb-3" style="max-width: 750px;">
                 <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="../img/hoteles/bbBarc.jpg" class="imgRes" alt="BBBarcelona">
+                  <img src="../img/hoteles/nhReus.jpg" class="imgRes" alt="nhR">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">B&B Hotel Barcelona</h5>
-                      <p class="card-text">El B&B Hotel Barcelona Viladecans es un hotel situado en Viladecans, a solo 220 metros de la estación de tren de la localidad.</p>
-                      <a href="#" class="btn btn-primary btn-block">Ver hotel</a>
+                      <div class="form-group">
+                        <label class="lblInp" for="nombreH">Nombre hotel:</label>
+                        <input type="text" name="nombreH" id="nombreH" class="form-control" placeholder="NH Reus" disabled/>
+                    </div>
+                    <div class="form-group">
+                        <label class="lblInp" for="direccionH">Dirección:</label>
+                        <input type="text" name="direccionH" id="direccionH" class="form-control" placeholder="traer desde talta_hotels" disabled/>
+                    </div>
+                    <a href="../user/hotelElegido.html" class="btn btn-primary btn-block">Ver hotel</a>
                     </div>
                 </div>
                 </div>
             </div>
-            <div class="card  mb-3" style="max-width: 750px;">
-                  <div class="row g-0">
-                  <div class="col-md-4">
-                      <img src="../img/hoteles/nhReus.jpg" class="imgRes" alt="nhR">
+
+
+            <div class="card mb-3" style="max-width: 750px;">
+              <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../img/hoteles/reBrea.jpg" class="imgRes" alt="gaudiR">
+              </div>
+              <div class="col-md-8">
+                  <div class="card-body">
+                    <div class="form-group">
+                      <label class="lblInp" for="name">Nombre hotel:</label>
+                      <input type="text" name="name" id="name" class="form-control" placeholder="Brea's Hotel" disabled/>
                   </div>
-                  <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title">NH Reus</h5>
-                        <p class="card-text">El NH Ciutat de Reus está a solo 1,5 km del centro de conferencias de Reus y del recinto ferial y a 3,5 km del aeropuerto de Reus. Ofrece conexión Wi-Fi gratuita en todas sus instalaciones y habitaciones con aire acondicionado.</p>
-                        <a href="#" class="btn btn-primary btn-block">Ver hotel</a>
-                      </div>
+                  <div class="form-group">
+                      <label class="lblInp" for="dir">Dirección:</label>
+                      <input type="text" name="dir" id="dir" class="form-control" placeholder="traer desde talta_hotels" disabled/>
                   </div>
+                  <a href="../user/hotelElegido.html" class="btn btn-primary btn-block">Ver hotel</a>
                   </div>
               </div>
-              <div class="card  mb-3" style="max-width: 750px;">
+              </div>
+          </div>
+              
+              <div class="card mb-3" style="max-width: 750px;">
                 <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="../img/hoteles/gaudiReus.jpg" class="imgRes" alt="gaudiR">
+                  <img src="../img/hoteles/gaudiReus.jpg" class="imgRes" alt="gaudiR">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Hotel Gaudí Reus</h5>
-                      <p class="card-text">Este hotel está en el centro de Reus, en la zona comercial y al lado de la ruta del Modernismo. El hotel cuenta con jardines, un bar acogedor y un restaurante a la carta con aire acondicionado. También ofrece un salón de actos para los huéspedes de negocios..</p>
-                      <a href="#" class="btn btn-primary btn-block">Ver hotel</a>
+                      <div class="form-group">
+                        <label class="lblInp" for="nombre">Nombre hotel:</label>
+                        <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Hotel Gaudí Reus" disabled/>
+                    </div>
+                    <div class="form-group">
+                        <label class="lblInp" for="direccion">Dirección:</label>
+                        <input type="text" name="direccion" id="direccion" class="form-control" placeholder="traer desde talta_hotels" disabled/>
+                    </div>
+                    <a href="../user/hotelElegido.html" class="btn btn-primary btn-block">Ver hotel</a>
                     </div>
                 </div>
                 </div>
+            </div>
+              
+
+                 <!-- Lo que he agregado yo para traer información aqui-->
+        <div class="card mb-3" style="max-width: 750px;">
+          <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/hoteles/reusCent.jpg" class="imgRes" alt="gaudiR">
+          </div>
+          <div class="col-md-8">
+              <div class="card-body">
+                <div class="form-group">
+                  <label class="lblInp" for="nombreHotel">Nombre hotel:</label>
+                  <input type="text" name="nombreHotel" id="nombreHotel" class="form-control" placeholder="traer desde alta_hotels" disabled/>
               </div>
-              <div class="card  mb-3" style="max-width: 750px;">
-                <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="../img/hoteles/forumTa.jpg" class="imgRes" alt="forTarr">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Forum Tarragona</h5>
-                      <p class="card-text">El Forum Tarragona, situado en el centro de Tarragona y a 1 km del puerto deportivo de Tarragona, cuenta con un restaurante y con WiFi gratuita en todo el establecimiento. También alberga un restaurante. Hay habitaciones privadas que incluyen baño privado con ducha. </p>
-                      <a href="#" class="btn btn-primary btn-block">Ver hotel</a>
-                    </div>
-                </div>
-                </div>
+              <div class="form-group">
+                  <label class="lblInp" for="direccionHotel">Dirección:</label>
+                  <input type="text" name="direccionHotel" id="direccionHotel" class="form-control" placeholder="traer desde talta_hotels" disabled/>
               </div>
-              <div class="card  mb-3" style="max-width: 750px;">
-                <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="../img/hoteles/bestCambr.jpg" class="imgRes" alt="hotCabri">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Hotel Best Cambrils</h5>
-                      <p class="card-text">El Hotel Best Cambrils se encuentra a 50 metros de la playa de Cambrils, en la Costa Dorada. Cuenta con una piscina al aire libre, sauna y gimnasio. Las habitaciones tienen aire acondicionado y balcón privado.</p>
-                      <a href="#" class="btn btn-primary btn-block">Ver hotel</a>
-                    </div>
-                </div>
-                </div>
+              <div class="form-group">
+                  <label class="lblInp" for="ciudadHotel">Ciudad:</label>
+                  <input type="text" name="ciudadHotel" id="ciudadHotel" class="form-control" placeholder="traer desde alta_hotels" disabled/>
+                  
               </div>
-              <div class="card  mb-3" style="max-width: 750px;">
-                <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="../img/hoteles/bbBarc.jpg" class="imgRes" alt="BBBarcelona">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">B&B Hotel Barcelona</h5>
-                      <p class="card-text">El B&B Hotel Barcelona Viladecans es un hotel situado en Viladecans, a solo 220 metros de la estación de tren de la localidad.</p>
-                      <a href="#" class="btn btn-primary btn-block">Ver hotel</a>
-                    </div>
-                </div>
-                </div>
+              <a href="../user/hotelElegido.html" class="btn btn-primary btn-block">Ver hotel</a>
               </div>
+          </div>
+          </div>
+      </div>
+        <!-- Fin de la targeta insertada -->
         </div>
   </div>
 <!-- FOOTER -->
 <div id="traerFooter"></div>
 
+<script src="../js/apiResultadoBus.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>

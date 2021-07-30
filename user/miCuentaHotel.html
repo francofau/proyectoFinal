@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
+    <!-- Boostrap JQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<!-- Font Awesome-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- ValidateJQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="../css/navBar.css">
+    <link rel="stylesheet" href="../css/micuenta.css">
+	<link rel="stylesheet" href="../css/footer.css">    
+    <title>VaDeHoteles - Mi Cuenta</title>
+</head>
+<body>
+<!-- NAVBAR -->
+<div id="traerNavBar"></div>
+
+<!-- CONTENIDO -->
+<div class="container sup mt-5">
+    <div class="marc">
+        <p class="subT text-center">Tu cuenta en VaDe<span id="iaCeles">Hoteles</span></p>
+             <form action="" method="post" name="" autocomplete="off">
+                 <div class="bord">
+                    <p class="text-center">Verifica y edita tus datos</p>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label class="lblCuen">Nombre Hotel:</label>
+                            <input name="nombreH" type="text" class="form-control" id="nombreH" placeholder="NOMBRE ALMACENADO EN BD (NO EDITABLE)" disabled>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="ciudad" class="lblCuen">Ciudad:</label>
+                            <input name="ciudad" type="text" class="form-control" id="ciudad" placeholder="APELLIDO ALMACENADO EN BD (NO EDITABLE)" disabled>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            <label class="lblCuen">Correo Electrónico:</label>
+                            <input type="text" name="email" id="email" class="form-control" placeholder="EMAIL ALMACENADO EN BD (EDITABLE)" >
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="direccion" class="lblCuen">Dirección:</label>
+                            <input type="text" name="direccion" id="direccion" class="form-control" placeholder="DIRECCIÓN ALMACENADA EN BD (EDITABLE)">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="telefono" class="lblCuen">Teléfono:</label>
+                            <input type="text" name="telefono" id="telefono" class="form-control" placeholder="TELÉFONO (EDITABLE)">
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="row">    
+                    <div class="col-md-7">    
+                        <div class="bord mt-3">
+                            <p class="text-center">Contraseña</p>    
+                            <form id="formMC">      
+                            <div class="form-group">
+                                <label for="password" class="lblCuen">Elija nueva contraseña:</label>             
+                                <input type="password" name="password" id="password" class="form-control" placeholder="************" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label for="repPassword" class="lblCuen">Repita nueva contraseña:</label>                  
+                                <input type="password" name="repPassword" id="repPassword" class="form-control" placeholder="************" required="required">
+                            </div>
+                            <div class="form-group">                 
+                                <input name="nuevaC" id="nuevaC" class="btn btn-outline-secondary btn-block mt-3" type="button" value="Cambiar contraseña">
+                            </div>
+                            </form> 
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="bord mt-3">
+                            <p class="text-center">Imagen de perfil</p> 
+                            <form id="form" action="" method="post">
+                                <div class="image-upload text-center">
+                                    <label for="file-input">
+                                        <img src="../img/profile.png" alt ="Click aquí para subir tu foto" title ="Cambiar imagen" > 
+                                    </label>
+                                    <input id="file-input" type="file" name="uploadedfile"/>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <input name="nuevaContraseña" id="nuevaContraseña" class="btn btn-primary btn-block mt-3" type="button" value="Guardar Cambios">
+                </form>
+        </div>       
+</div> <!-- fin contenedor principal -->
+
+<!-- FOOTER -->
+<div id="traerFooter"></div>
+
+<script src="../js/apiMiCuentaHotel.js"></script>
+<script src="../js/main.js"></script>
+
+</body>
+</html>

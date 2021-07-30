@@ -33,19 +33,19 @@
         <div class="row no-gutters">          
           <div class="col-md-6">
             <div class="card-body">
-                <p class="login-card-description text-center">Estas son tus reservas en Va<span id="iaCeles">DeHoteles</span></p>
-                <form action="" method="REVISARESTEMETODO" id="formVerReservas" autocomplete="off">
+                <p class="login-card-description text-center">Estas son las reservas por parte de los clientes de Va<span id="iaCeles">DeHoteles</span></p>
+                <form action="" method="REVISARESTEMETODO" id="formVerReservasHotel" autocomplete="off">
                     <div class="form-group">
-                        <label class="lblInp" for="nombreHotel">Nombre del hotel:</label>
-                        <input type="text" name="nombreHotel" id="nombreHotel" class="form-control" placeholder="traer desde tabla altaHotels" disabled/>
+                        <label class="lblInp" for="nombre">Nombre y apellido:</label>
+                        <input type="text" name="nombre" id="nombre" class="form-control" placeholder="traer desde tabla users" disabled/>
                     </div>
                     <div class="form-group">
-                        <label class="lblInp" for="direccionHotel">Dirección del hotel:</label>
-                        <input type="text" name="direccionHotel" id="direccionHotel" class="form-control" placeholder="traer desde tabla altaHotels" disabled/>
+                        <label class="lblInp" for="email">Email:</label>
+                        <input type="text" name="email" id="email" class="form-control" placeholder="traer desde tabla users" disabled/>
                     </div>
                     <div class="form-group">
-                        <label class="lblInp" for="ciudadHotel">Ciudad:</label>
-                        <input type="text" name="ciudadHotel" id="ciudadHotel" class="form-control" placeholder="traer desde tabla altaHotels" disabled/>
+                        <label class="lblInp" for="telefono">Teléfono:</label>
+                        <input type="text" name="telefono" id="telefono" class="form-control" placeholder="traer desde tabla reservas" disabled/>
                     </div>
                     <div class="form-group">
                         <label class="lblInp" for="fechaEntrada">Fecha de entrada:</label>
@@ -72,7 +72,7 @@
 
 <!-- FOOTER -->
 <div id="traerFooter"></div>
-<script src="../js/apiVerReservas.js"></script>
+<script src="../js/apiVerReservasHotel.js"></script>
 <script src="../js/main.js"></script>
 
 </body>
